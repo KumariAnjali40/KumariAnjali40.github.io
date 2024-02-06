@@ -463,23 +463,43 @@
       </div>
     </section>
 
-    <section id="githubCal">
+    <section id="githubCal" style="max-width: 100%; overflow-x: hidden;">
       <div id="gitHead">
-        <h1>GitHub Calendar</h1>
+          <h1>GitHub Calendar</h1>
       </div>
-      <div class="calendar">
-        <!-- Loading stuff -->
-        Loading the data just for you.
-
+      <div class="calendar" style="text-align: center;">
         
+          <img
+              id="github-calendar-responsive"
+              style="width: 90%; max-width: 800px; height: auto; margin-top: 40px; padding-top: 25px;"
+              src="https://ghchart.rshah.org/KumariAnjali40"
+              alt="err"
+          />
       </div>
+  
+      <!-- <script>
+          GitHubCalendar(".calendar", "KumariAnjali40");
+          // or enable responsive functionality
+          GitHubCalendar(".calendar", "KumariAnjali40", { responsive: true });
+      </script> -->
+  
+      <style>
+          @media screen and (max-width: 600px) {
+              /* Adjust styles for screens with a maximum width of 600px */
+              #githubCal {
+                  padding: 10px;
+              }
+              .calendar {
+                  width: 100%;
+              }
+          }
+      </style>
+  </section>
+  
 
-      <script>
-        GitHubCalendar(".calendar", "KumariAnjali40");
-        // or enable responsive functionality
-        GitHubCalendar(".calendar", "KumariAnjali40", { responsive: true });
-      </script>
-    </section>
+
+
+
 
     <div id="statebox">
       <div id="gitStats">
